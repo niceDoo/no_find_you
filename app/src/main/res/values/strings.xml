@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">No_find_you</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="google_maps_API_key">AIzaSyA0Kfbzu3TDcFzQTPhl2Q5wF9vsxVILYvU</string>
+</resources>

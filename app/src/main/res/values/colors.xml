@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorAccent">@color/purple_2</color>
+
+    <color name="statusBar">#FFFFFF</color>
+
+
+    <color name="white_transparent">#ccFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="red">#FB0069</color>
+    <color name="red_transparent">#80FB0069</color>
+
+    <color name="gray">#F4F6E8</color>
+
+    <color name="mint">#D6FFD0</color>
+    <color name="lemon">#FAED7D</color>
+
+    <color name="black">#000000</color>
+    <color name="black_transparent">#80000000</color>
+
+    <color name="purple">#6F2D91</color>
+    <color name="purple_2">#A566FF</color>
+    <color name="purple_transparent">#80A566FF</color>
+
+    <color name="indigo"> #233067 </color>
+
+
+    <!--투명도
+100% — FF
+90% — E6
+80% — CC
+70% — B3
+60% — 99
+50% — 80
+40% — 66
+30% — 4D
+20% — 33
+10% — 1A
+ 0% — 00
+-->
+
+
+</resources>

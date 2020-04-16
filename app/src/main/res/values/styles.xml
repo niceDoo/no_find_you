@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <!--상태바 글씨 색 변경 -->
+
+        <!--true 가 검정색 이고  false 가 하얀색 -->
+        <item name="android:windowLightStatusBar">true</item>
+
+
+
+        <!-- status bar 상태바 바탕화면-->
+
+         <!--true 가 하얀색이고 false 가 검정색 -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/gray</item>
+        <item name="android:windowTranslucentStatus">false</item>
+
+
+        <!--PrimaryDark - statusBar - 화면 맨위 와이파이/시간/배터리 있는곳 -->
+
+        <!--액션바 타이틀바 없애기 설정 -->
+        <!--<item name="windowNoTitle">false</item>-->
+
+        </style>
+</resources>

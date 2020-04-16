@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="0.5sp" android:color="@color/gray" />
+            <solid android:color="@color/gray" />
+            <corners android:topLeftRadius="5dp" android:topRightRadius="5dp" />
+        </shape>
+    </item>
+
+    <!--아래쪽 색 넣기  -->
+    <item android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="0.5sp" android:color="@color/purple_2" />
+            <solid android:color="@color/white" />
+
+
+        </shape>
+    </item>
+
+</layer-list>

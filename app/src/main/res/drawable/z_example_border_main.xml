@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:top="1px" android:bottom="1px">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+
+            <gradient android:type="linear"
+                android:startColor="#A566FF"
+                android:endColor="#FFFFFF"
+                android:angle="270" />
+        </shape>
+    </item>
+
+</layer-list>
+
+<!--#CE22F0 보라색    #60119E 진한보라색   -->

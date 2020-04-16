@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.example.louis.no_find_you.Login_3_sign_up_profile_page"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    >
+
+
+    <include
+        layout="@layout/main_1_main_toolbar_custom"
+        android:id="@+id/main_1_main_toolbar_custom"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_main_1"
+        android:weightSum="10">
+
+        <!--아이디 입력 =============================================================-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+                 <!--maxLength 글자제안-->
+                <EditText
+                    android:id="@+id/profile_id_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:hint="NickName"
+                    android:paddingStart="5dp"
+                    android:textSize="15sp"
+                    android:textColorHint="#80000000"
+                    android:textColor="@color/black"
+                    android:drawableEnd="@drawable/z_ic_person_black_24dp"
+                    android:background="@drawable/edit_text_style_selector"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:weightSum="5"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/profile_id_edit_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="영문 + 숫자조합 최소 5자 이상   // 중복체크 확인 "
+                android:minEms="5"
+                android:textSize="10sp"
+                android:paddingStart="5dp"
+                android:textColor="#80000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+
+        <!--생년월일 ============================================================-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+                <!--maxLength 글자제안-->
+                <EditText
+                    android:id="@+id/profile_birthday_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:inputType="numberSigned"
+                    android:maxLength="6"
+                    android:hint="생년월일 6자리 입력해주세요"
+                    android:textColorHint="#80000000"
+                    android:paddingStart="5dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edit_text_style_selector"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text=" - "
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:inputType="numberSigned"
+                    android:text="xxxxxxx"
+                    android:textColor="#80000000"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+            <TextView
+                android:id="@+id/profile_birthday_edit_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="ex) 1981.08.17  \u003e  810817"
+                android:textSize="10sp"
+                android:paddingStart="5dp"
+                android:textColor="#80000000"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <!--성별 입력 ==============================================================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@drawable/edit_text_style_selector"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="gender"
+                        android:textColor="#80000000"
+                        android:textSize="15sp"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/genderGroup"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_weight="3"
+                        android:weightSum="2"
+                        >
+                        <RadioButton
+                            android:id="@+id/gender_male_radio_check"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="male"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            />
+                        <RadioButton
+                            android:id="@+id/gender_female_radio_check"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="female"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            android:checked="true"
+                            />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:weightSum="5"
+            />
+
+
+        <!--전화번호 입력 =============================================================-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_style_selector"
+                    android:text="+82"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"/>
+
+                <!--maxLength 글자제안-->
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.9"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:hint="PHONE"
+                    android:paddingStart="5dp"
+                    android:textSize="15sp"
+                    android:textColorHint="#80000000"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edit_text_style_selector"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="ex) 10 52376207 공백없이 입력"
+                android:textSize="10sp"
+                android:paddingStart="5dp"
+                android:textColor="@color/black_transparent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <!--다음페이지 로 이동 버튼 ===============================================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <Button
+                    android:id="@+id/profile_completion_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="NEXT PAGE...2"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/border_main_1"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+
+</LinearLayout>

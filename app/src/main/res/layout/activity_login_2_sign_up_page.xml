@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.example.louis.no_find_you.Login_2_sign_up_page"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    >
+
+    <include
+        layout="@layout/main_1_main_toolbar_custom"
+        android:id="@+id/main_1_main_toolbar_custom"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_main_1"
+            android:layout_weight="10">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+                    <EditText
+                        android:id="@+id/join_email_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_style_selector"
+                        android:paddingStart="5dp"
+                        android:layout_weight="4"
+                        android:hint="\t E-mail"
+                        android:textColorHint="#80000000"
+                        android:drawableEnd="@drawable/z_ic_mail_black_24dp"
+                        android:paddingEnd="5dp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/join_email_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:paddingStart="5dp"
+                    android:hint="이메일을 입력해주세요  // 중복여부 확인"
+                    android:textSize="10sp"
+                    android:textColorHint="#80000000"
+                    android:textCursorDrawable="@color/red"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+                    <EditText
+                        android:id="@+id/join_password_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_style_selector"
+                        android:paddingStart="5dp"
+                        android:layout_weight="4"
+                        android:inputType="textPassword"
+                        android:hint="\t Password "
+                        android:textColorHint="#80000000"
+                        android:drawableRight="@drawable/z_ic_lock_black_24dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textCursorDrawable="@color/red"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/join_password_edit_check"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:paddingStart="5dp"
+                    android:hint="4자 이상 , 12자 이내로 기재"
+                    android:textSize="10sp"
+                    android:textColorHint="#80000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+                    <EditText
+                        android:id="@+id/join_password_edit_confirm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_style_selector"
+                        android:paddingStart="5dp"
+                        android:layout_weight="4"
+                        android:inputType="textPassword"
+                        android:hint="\t Again Password"
+                        android:textColorHint="#80000000"
+                        android:drawableRight="@drawable/z_ic_lock_black_24dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@color/red"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/join_password_edit_check_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:paddingStart="5dp"
+                    android:textColor="#FF0000"
+                    android:textSize="10sp"
+                    android:hint="비밀번호를 한번 더 입력해 주세요"
+                    android:textColorHint="#80000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+            </LinearLayout>
+            <!--여기까지 layout_weight................. 4.9-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+                    <Button
+                        android:id="@+id/join_join_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="NEXT PAGE...1"
+                        android:textSize="15sp"
+                        android:background="@drawable/button_style_selector"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                >
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

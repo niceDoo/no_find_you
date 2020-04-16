@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.example.louis.no_find_you.MainActivity_1_page"
+    android:weightSum="10"
+    >
+
+    <include
+        layout="@layout/main_1_main_toolbar_custom"
+        android:id="@+id/main_1_main_toolbar_custom"/>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#324264"
+        android:weightSum="10">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                android:background="@color/white"
+                >
+
+
+                <TextView
+                    android:id="@+id/Notice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="  ♥  NOTICE   :"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/Notice_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.8"
+                    android:gravity="center"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="안녕하세요 반갑습니다. No_Find_You 은 사람들의 소통을 하는 어플입니다. 안녕하세요 반갑습니다. No_Find_You 은 사람들의 소통을 하는 어플입니다. "
+                    android:textColor="#000000"
+                    android:textSize="30px"
+                    />
+                <!--ellipseze / singleLine  글씨를 강물처럼 흐르게 만들기-->
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/table_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.5"
+            android:layout_margin="5dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:weightSum="5">
+
+
+            <TextView
+                android:id="@+id/main_address_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="contants"
+                android:textColor="#000000"
+                android:textSize="45px"
+                android:background="@drawable/text_button_style_selector"
+                />
+
+            <TextView
+                android:id="@+id/main_chat_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="chatting"
+                android:textColor="#000000"
+                android:textSize="45px"
+                android:background="@drawable/text_button_style_selector"
+                />
+
+            <TextView
+                android:id="@+id/main_map_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="map"
+                android:textColor="#000000"
+                android:textSize="45px"
+                android:background="@drawable/text_button_style_selector"
+                />
+
+            <TextView
+                android:id="@+id/main_my_gps_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="my way"
+                android:textColor="#000000"
+                android:textSize="45px"
+                android:background="@drawable/text_button_style_selector"
+                />
+
+            <TextView
+                android:id="@+id/main_setting_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="setting"
+                android:textColor="#000000"
+                android:textSize="45px"
+                android:background="@drawable/text_button_style_selector"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

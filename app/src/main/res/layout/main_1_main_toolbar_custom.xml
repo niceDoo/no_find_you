@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/purple_2"
+    >
+
+
+    <TextView
+        android:id="@+id/main_1_toolbar__title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:text="FIND DOO."
+        android:typeface="sans"
+        android:textStyle="bold"
+        />
+
+    <ImageButton
+        android:id="@+id/main_1_toolbar_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/z_ic_location_24dp"
+        />
+
+    <ImageButton
+        android:id="@+id/main_1_toolbar_image_button_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/z_ic_person_black_24dp"
+        />
+</android.support.v7.widget.Toolbar>

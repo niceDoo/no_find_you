@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.louis.no_find_you.MainActivity_9_page_Google_Map_Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:weightSum="10"
+    >
+
+    <include
+        layout="@layout/main_8_setting_toolbar_custom"
+        android:id="@+id/main_8_setting_toolbar_custom"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--빈 공간-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:weightSum="10"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/border_line"
+                >
+                <!--이미지 뷰====================================================== -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/c"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+
+                    <!--아이디 ==========================================================-->
+                    <TextView
+                        android:id="@+id/setting_get_id_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="/"
+                        android:textColor="@color/black"/>
+
+                    <!--남 여 구분 이미지 뷰 -->
+                    <TextView
+                        android:id="@+id/setting_get_gender_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:layout_gravity="start"
+                        android:gravity="center"
+                        android:text="women"
+                        android:textSize="10sp"
+                        android:textColor="@color/purple"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="계정 정보"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:weightSum="2"
+                android:background="@drawable/border_line">
+
+                <!--E-MAIL========================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="E-MAIL"
+                        android:textSize="10sp"
+                        />
+                    <TextView
+                        android:id="@+id/setting_get_email_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <!--테두리 가운데 선 긋기-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/purple_2"/>
+
+                <!--비밀번호 ===========================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="PASSWORD"
+                        android:textSize="10sp"/>
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:id="@+id/setting_get_password_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="내 정보"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:weightSum="4"
+                android:background="@drawable/border_line"
+                >
+                <!--NAME ==============================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="NAME"
+                        android:textSize="10sp"
+                        />
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:id="@+id/setting_get_name_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <!--테두리 가운데 선 긋기-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/purple_2"/>
+
+                <!--생년월일 ===========================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="BIRTH DAY"
+                        android:textSize="10sp"
+                        />
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:id="@+id/setting_get_birth_day_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:text="버튼으로 만들어야함"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <!--테두리 가운데 선 긋기-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/purple_2"/>
+
+                <!--PHONE==============================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="PHONE"
+                        android:textSize="10sp"
+                        />
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:id="@+id/setting_get_phone_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:text="010 5237 6207"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <!--테두리 가운데 선 긋기-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/purple_2"/>
+
+                <!--지역 ===========================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="지역"
+                        android:textSize="10sp"/>
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:id="@+id/setting_get_state_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:text="강남역 / 신사역"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="아이템 / 취미"/>
+
+                                             <!--여기까지-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:weightSum="2"
+                android:background="@drawable/border_line"
+                >
+                <!--관심지역 ==============================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="지역"
+                        android:textSize="10sp"
+                        />
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:text="서울시 강남구 압구정"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>
+
+                <!--테두리 가운데 선 긋기-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/purple_2"/>
+
+                <!--직업 ===========================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="직업"
+                        android:textSize="10sp"/>
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:text="자영업"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:weightSum="2"
+                android:background="@drawable/border_line"
+                >
+                <!--관심지역 ==============================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="지역"
+                        android:textSize="10sp"
+                        />
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:text="서울시 강남구 압구정"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <!--테두리 가운데 선 긋기-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/purple_2"/>
+
+                <!--직업 ===========================================-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:text="직업"
+                        android:textSize="10sp"/>
+
+                    <!--빈 공간-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:gravity="start|center"
+                        android:text="자영업"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
